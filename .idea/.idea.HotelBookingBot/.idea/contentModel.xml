@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\rave9\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\rave9\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_HotelBookingBot.-785344416.00" t="ExcludeRecursive" />
+    <e p="C:\Users\rave9\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+    <e p="D:\Projects\HotelBookingBot" t="IncludeFlat">
+      <e p="HotelBookingBot" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BotClient.cs" t="Include" />
+        <e p="Commands" t="Include">
+          <e p="Command.cs" t="Include" />
+          <e p="StartCommand.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="UpdateController.cs" t="Include" />
+        </e>
+        <e p="HotelBookingBot.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="HotelBookingBot.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="ServiceCollectionExtensions.cs" t="Include" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="HotelBookingBot.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
