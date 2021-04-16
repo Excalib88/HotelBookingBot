@@ -1,7 +1,5 @@
 ﻿using System.Collections.Generic;
-using System.Threading.Tasks;
 using HotelBookingBot.Commands;
-using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 
 namespace HotelBookingBot
@@ -13,9 +11,11 @@ namespace HotelBookingBot
 
 		public BotClient(ITelegramBotClient telegramBotClient)
 		{
+			var startCommand = new StartCommand(telegramBotClient);
+			CurrentState = startCommand;
 			Commands = new List<Command>
 			{
-				new StartCommand(telegramBotClient),
+				startCommand,
 				new ChooseCityCommand(telegramBotClient),
 				new DayQuantityCommand(telegramBotClient),
 				new RoomTypeCommand(telegramBotClient),

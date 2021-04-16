@@ -4,9 +4,7 @@
     <projectFile>HotelBookingBot/HotelBookingBot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,12 +38,12 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Startup.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rCsi28wCSBlKnhY2nROZZipb3C" />
@@ -115,7 +113,7 @@
       <updated>1618491534036</updated>
       <workItem from="1618491549169" duration="3564000" />
       <workItem from="1618509197883" duration="16377000" />
-      <workItem from="1618603691542" duration="3837000" />
+      <workItem from="1618603691542" duration="4151000" />
     </task>
     <servers />
   </component>
@@ -154,62 +152,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs</url>
-          <line>90</line>
-          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Commands\ChooseCityCommand.cs" initialLine="90" containingFunctionPresentation="method 'Contains'">
-            <startOffsets>
-              <option value="2836" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2973" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs</url>
-          <line>32</line>
-          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Controllers\UpdateController.cs" initialLine="32" containingFunctionPresentation="method 'Post'">
-            <startOffsets>
-              <option value="713" />
-            </startOffsets>
-            <endOffsets>
-              <option value="743" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs</url>
-          <line>30</line>
-          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Controllers\UpdateController.cs" initialLine="30" containingFunctionPresentation="method 'Post'">
-            <startOffsets>
-              <option value="602" />
-              <option value="652" />
-            </startOffsets>
-            <endOffsets>
-              <option value="703" />
-              <option value="701" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs</url>
-          <line>26</line>
-          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Controllers\UpdateController.cs" initialLine="26" containingFunctionPresentation="method 'Post'">
-            <startOffsets>
-              <option value="525" />
-              <option value="545" />
-            </startOffsets>
-            <endOffsets>
-              <option value="544" />
-              <option value="557" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
