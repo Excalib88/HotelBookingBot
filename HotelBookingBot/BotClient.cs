@@ -6,13 +6,14 @@ namespace HotelBookingBot
 {
 	public class BotClient
 	{
-		public Command CurrentState { get; set; }
+		public Dictionary<long, Command> CurrentStates { get; set; }
 		public List<Command> Commands { get; }
 
 		public BotClient(ITelegramBotClient telegramBotClient)
 		{
 			var startCommand = new StartCommand(telegramBotClient);
-			CurrentState = startCommand;
+			CurrentStates = new Dictionary<long, Command>();
+
 			Commands = new List<Command>
 			{
 				startCommand,
