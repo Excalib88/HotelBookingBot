@@ -4,11 +4,7 @@
     <projectFile>HotelBookingBot/HotelBookingBot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +56,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34991798" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -117,7 +113,7 @@
       <updated>1618491534036</updated>
       <workItem from="1618491549169" duration="3564000" />
       <workItem from="1618509197883" duration="16377000" />
-      <workItem from="1618603691542" duration="6348000" />
+      <workItem from="1618603691542" duration="6649000" />
     </task>
     <servers />
   </component>
@@ -156,6 +152,21 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs</url>
+          <line>41</line>
+          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Controllers\UpdateController.cs" initialLine="41" containingFunctionPresentation="method 'Post'">
+            <startOffsets>
+              <option value="1091" />
+              <option value="1141" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1201" />
+              <option value="1199" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
