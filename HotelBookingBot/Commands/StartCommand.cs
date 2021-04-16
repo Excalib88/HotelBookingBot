@@ -25,7 +25,12 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update)
 		{
-			var chatId = update.Message.Chat.Id;
+			var chatId = update.Message?.Chat?.Id;
+			if (chatId == null)
+			{
+				chatId = update.CallbackQuery.From.Id;
+			}
+
 			var keyboard = new InlineKeyboardMarkup(new [] 
 			{
 				new [] 
