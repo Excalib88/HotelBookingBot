@@ -16,7 +16,7 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update)
 		{
-			await _telegramBotClient.SendTextMessageAsync(update.Message.Chat.Id, "Бронирование завершено!");
+			await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, "Бронирование завершено!");
 		}
 
 		public override bool Contains(Update update, Command state)
