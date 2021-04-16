@@ -1,22 +1,23 @@
 ﻿using System.Collections.Generic;
 using HotelBookingBot.Commands;
+using HotelBookingBot.Entities;
+using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 
 namespace HotelBookingBot
 {
 	public class BotClient
 	{
-		public Dictionary<long, Command> CurrentStates { get; set; }
 		public List<Command> Commands { get; }
-
-		public BotClient(ITelegramBotClient telegramBotClient)
+		public Dictionary<long, Command> CurrentStates { get; set; } = new Dictionary<long, Command>();
+		public Dictionary<long, Booking> Bookings { get; set; } = new Dictionary<long, Booking>();
+		public IConfiguration Configuration { get; set; }
+		
+		public BotClient(ITelegramBotClient telegramBotClient, IConfiguration configuration)
 		{
-			var startCommand = new StartCommand(telegramBotClient);
-			CurrentStates = new Dictionary<long, Command>();
-
 			Commands = new List<Command>
 			{
-				startCommand,
+				new StartCommand(telegramBotClient),
 				new ChooseCityCommand(telegramBotClient),
 				new DayQuantityCommand(telegramBotClient),
 				new RoomTypeCommand(telegramBotClient),
@@ -26,6 +27,8 @@ namespace HotelBookingBot
 				new BookingCommand(telegramBotClient),
 				new BookingCompletedCommand(telegramBotClient)
 			};
+
+			Configuration = configuration;
 		}
 	}
 }

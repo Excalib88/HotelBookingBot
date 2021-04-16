@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
@@ -14,9 +15,16 @@ namespace HotelBookingBot.Commands
 			_telegramBotClient = telegramBotClient;
 		}
 
-		public override async Task Execute(Update update)
+		public override async Task Execute(Update update, BotClient botClient)
 		{
-			await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, "Бронирование завершено!");
+			var chatId = update.CallbackQuery.From.Id;
+			await using (var context = new DataContext(botClient.Configuration.GetConnectionString("Db")))
+			{
+				await context.Bookings.AddAsync(botClient.Bookings[chatId]);
+				await context.SaveChangesAsync();
+			}
+
+			await _telegramBotClient.SendTextMessageAsync(chatId, "Бронирование завершено!");
 		}
 
 		public override bool Contains(Update update, Command state)

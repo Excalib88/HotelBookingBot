@@ -23,7 +23,7 @@ namespace HotelBookingBot.Commands
 				update.Message?.Text == "/back";
 		}
 
-		public override async Task Execute(Update update)
+		public override async Task Execute(Update update, BotClient botClient)
 		{
 			var chatId = update.Message?.Chat?.Id;
 			if (chatId == null)

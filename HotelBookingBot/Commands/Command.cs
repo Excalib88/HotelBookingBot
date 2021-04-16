@@ -7,7 +7,7 @@ namespace HotelBookingBot.Commands
 	{
 		public abstract string Name { get; }
 
-		public abstract Task Execute(Update update);
+		public abstract Task Execute(Update update, BotClient botClient);
 
 		public abstract bool Contains(Update update, Command state);
 	}

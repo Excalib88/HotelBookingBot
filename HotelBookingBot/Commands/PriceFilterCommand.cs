@@ -20,7 +20,7 @@ namespace HotelBookingBot.Commands
 			_telegramBotClient = telegramBotClient;
 		}
 
-		public override async Task Execute(Update update)
+		public override async Task Execute(Update update, BotClient botClient)
 		{
 			var keyboard = new InlineKeyboardMarkup(new[]
 			{

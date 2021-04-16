@@ -19,7 +19,7 @@ namespace HotelBookingBot.Commands
 			_telegramBotClient = telegramBotClient;
 		}
 
-		public override async Task Execute(Update update)
+		public override async Task Execute(Update update, BotClient botClient)
 		{
 			await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, "Введите количество дней!");
 		}
