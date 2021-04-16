@@ -18,7 +18,9 @@ namespace HotelBookingBot.Commands
 		
 		public override bool Contains(Update update, Command state)
 		{
-			return !string.IsNullOrWhiteSpace(update.Message?.Text) && update.Message.Text.Contains(Name) || update.CallbackQuery?.Data == "/back";
+			return !string.IsNullOrWhiteSpace(update.Message?.Text) && update.Message.Text.Contains(Name) || 
+				update.CallbackQuery?.Data == "/back" || 
+				update.Message?.Text == "/back";
 		}
 
 		public override async Task Execute(Update update)

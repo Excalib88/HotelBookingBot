@@ -37,14 +37,14 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" />
       <option value="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Startup.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" />
     </changedPaths>
   </component>
@@ -115,7 +115,7 @@
       <updated>1618491534036</updated>
       <workItem from="1618491549169" duration="3564000" />
       <workItem from="1618509197883" duration="16377000" />
-      <workItem from="1618603691542" duration="3412000" />
+      <workItem from="1618603691542" duration="3837000" />
     </task>
     <servers />
   </component>
@@ -163,7 +163,7 @@
               <option value="2836" />
             </startOffsets>
             <endOffsets>
-              <option value="2940" />
+              <option value="2973" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
