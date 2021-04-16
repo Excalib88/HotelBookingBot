@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.ReplyMarkups;
@@ -19,7 +18,7 @@ namespace HotelBookingBot.Commands
 		
 		public override bool Contains(Update update, Command state)
 		{
-			return !string.IsNullOrWhiteSpace(update.Message?.Text) && update.Message.Text.Contains(Name) || update.InlineQuery.Query== "/back";
+			return !string.IsNullOrWhiteSpace(update.Message?.Text) && update.Message.Text.Contains(Name) || update.CallbackQuery?.Data == "/back";
 		}
 
 		public override async Task Execute(Update update)
