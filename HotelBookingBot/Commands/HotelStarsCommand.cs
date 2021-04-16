@@ -57,7 +57,7 @@ namespace HotelBookingBot.Commands
 				}
 			});
 
-			await _telegramBotClient.SendTextMessageAsync(update.Message.Chat.Id, "Сколько звезд должно быть у отеля?", replyMarkup:keyboard);
+			await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, "Сколько звезд должно быть у отеля?", replyMarkup:keyboard);
 		}
 
 		public override bool Contains(Update update, Command state)
