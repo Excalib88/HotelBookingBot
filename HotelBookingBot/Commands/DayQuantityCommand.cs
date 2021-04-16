@@ -26,11 +26,8 @@ namespace HotelBookingBot.Commands
 
 		public override bool Contains(Update update, Command state)
 		{
-			if (state.Name.Contains("ChooseCity"))
-			{
-				return true;
-			}
-			return false;
+			return state.Name.Contains("ChooseCity") && !string.IsNullOrWhiteSpace(update.CallbackQuery?.Data) &&
+				_cities.Contains(update.CallbackQuery?.Data);
 		}
 	}
 }

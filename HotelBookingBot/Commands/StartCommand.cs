@@ -19,9 +19,6 @@ namespace HotelBookingBot.Commands
 		
 		public override bool Contains(Update update, Command state)
 		{
-			if (update.Message.Type != Telegram.Bot.Types.Enums.MessageType.Text)
-				return false;
-
 			return update.Message.Text.Contains(Name) || update.InlineQuery.Query== "/back";
 		}
 

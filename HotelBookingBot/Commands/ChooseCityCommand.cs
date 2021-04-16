@@ -88,10 +88,7 @@ namespace HotelBookingBot.Commands
 
 		public override bool Contains(Update update, Command state) 
         {
-            if (update.CallbackQuery == null)
-                return false;
-            
-            return update.CallbackQuery.Data == "/choose";
+            return update.CallbackQuery.Data == "/choose" && !string.IsNullOrWhiteSpace(update.CallbackQuery?.Data);
 		}
 	}
 }

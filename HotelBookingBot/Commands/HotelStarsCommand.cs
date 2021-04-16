@@ -62,7 +62,7 @@ namespace HotelBookingBot.Commands
 
 		public override bool Contains(Update update, Command state)
 		{
-			return state.Name.Contains("") && update.CallbackQuery.Data.Contains("000");
+			return state.Name.Contains("PriceFilter") && !string.IsNullOrWhiteSpace(update.CallbackQuery?.Data) && update.CallbackQuery.Data.Contains("000");
 		}
 	}
 }
