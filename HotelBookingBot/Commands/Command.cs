@@ -7,8 +7,8 @@ namespace HotelBookingBot.Commands
 	{
 		public abstract string Name { get; }
 
-		public abstract Task Execute(Message message);
+		public abstract Task Execute(Update update);
 
-		public abstract bool Contains(Message message);
+		public abstract bool Contains(Update update, Command state);
 	}
 }

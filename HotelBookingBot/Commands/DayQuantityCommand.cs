@@ -1,0 +1,36 @@
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+using Telegram.Bot;
+using Telegram.Bot.Types;
+
+namespace HotelBookingBot.Commands
+{
+	public class DayQuantityCommand : Command
+	{
+		public override string Name { get; } = "/DayQuantity";
+		private readonly ITelegramBotClient _telegramBotClient;
+		private readonly List<string> _cities = new List<string>
+		{
+			"Алма-Ата", "Нур-Султан", "Шымкент", "Актобе", "Караганда", "Тараз", "Павлодар", "Атырау", "Костанай"
+		};
+
+		public DayQuantityCommand(ITelegramBotClient telegramBotClient)
+		{
+			_telegramBotClient = telegramBotClient;
+		}
+
+		public override async Task Execute(Update update)
+		{
+			await _telegramBotClient.SendTextMessageAsync(update.Message.Chat.Id, "Введите количество дней!");
+		}
+
+		public override bool Contains(Update update, Command state)
+		{
+			if (state.Name.Contains("ChooseCity"))
+			{
+				return true;
+			}
+			return false;
+		}
+	}
+}

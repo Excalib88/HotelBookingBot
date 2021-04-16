@@ -1,12 +1,15 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
+using Telegram.Bot.Types.ReplyMarkups;
 
 namespace HotelBookingBot.Commands
 {
 	public class StartCommand : Command
 	{
 		public override string Name => @"/start";
+
 		private readonly ITelegramBotClient _telegramBotClient;
 
 		public StartCommand(ITelegramBotClient telegramBotClient)
@@ -14,18 +17,31 @@ namespace HotelBookingBot.Commands
 			_telegramBotClient = telegramBotClient;
 		}
 		
-		public override bool Contains(Message message)
+		public override bool Contains(Update update, Command state)
 		{
-			if (message.Type != Telegram.Bot.Types.Enums.MessageType.Text)
+			if (update.Message.Type != Telegram.Bot.Types.Enums.MessageType.Text)
 				return false;
 
-			return message.Text.Contains(this.Name);
+			return update.Message.Text.Contains(Name) || update.InlineQuery.Query== "/back";
 		}
 
-		public override async Task Execute(Message message)
+		public override async Task Execute(Update update)
 		{
-			var chatId = message.Chat.Id;
-			await _telegramBotClient.SendTextMessageAsync(chatId, "Hello I'm ASP.NET Core Bot", parseMode: Telegram.Bot.Types.Enums.ParseMode.Markdown);
+			var chatId = update.Message.Chat.Id;
+			var keyboard = new InlineKeyboardMarkup(new [] 
+			{
+				new [] 
+				{
+					new InlineKeyboardButton
+					{
+						Text = "Подобрать отель",
+						CallbackData = "/choose"
+					}
+				}
+			});
+
+			await _telegramBotClient.SendTextMessageAsync(chatId, "Добро пожаловать в сервис бронирование отелей!", 
+				replyMarkup: keyboard);
 		}
 	}
 }

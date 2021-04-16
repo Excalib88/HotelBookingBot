@@ -20,18 +20,19 @@ namespace HotelBookingBot.Controllers
 		{
 			return Ok("Health");
 		}
-		
+
 		[HttpPost("update")]
 		public async Task<IActionResult> Post([FromBody]Update update)
 		{
 			if (update == null) return Ok();
-			
-			var commands = _botClient.Commands;
-			var message = update.Message;
 
-			foreach (var command in commands.Where(command => command.Contains(message)))
+			var commands = _botClient.Commands;
+
+			foreach (var command in commands.Where(command => command.Contains(update, _botClient.CurrentState)))
 			{
-				await command.Execute(message);
+				await command.Execute(update);
+				_botClient.CurrentState = command;
+
 				break;
 			}
 

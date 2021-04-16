@@ -11,13 +11,38 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="BotClient.cs" t="Include" />
         <e p="Commands" t="Include">
+          <e p="BookingCommand.cs" t="Include" />
+          <e p="BookingCompletedCommand.cs" t="Include" />
+          <e p="ChooseCityCommand.cs" t="Include" />
           <e p="Command.cs" t="Include" />
+          <e p="DayQuantityCommand.cs" t="Include" />
+          <e p="HotelStarsCommand.cs" t="Include" />
+          <e p="PriceFilterCommand.cs" t="Include" />
+          <e p="RoomTypeCommand.cs" t="Include" />
           <e p="StartCommand.cs" t="Include" />
+          <e p="TotalFinderCommand.cs" t="Include" />
         </e>
         <e p="Controllers" t="Include">
           <e p="UpdateController.cs" t="Include" />
         </e>
+        <e p="DataContext.cs" t="Include" />
+        <e p="Entities" t="Include">
+          <e p="Booking.cs" t="Include" />
+          <e p="City.cs" t="Include" />
+          <e p="Client.cs" t="Include" />
+          <e p="Hotel.cs" t="Include" />
+          <e p="HotelRoom.cs" t="Include" />
+        </e>
         <e p="HotelBookingBot.csproj" t="IncludeRecursive" />
+        <e p="Migrations" t="Include">
+          <e p="20210416123829_AddHotelEntities.cs" t="Include" />
+          <e p="20210416123829_AddHotelEntities.Designer.cs" t="Include" />
+          <e p="DataContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="HotelStarsType.cs" t="Include" />
+          <e p="RoomType.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">

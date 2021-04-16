@@ -5,26 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/City.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/Client.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/Hotel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Models/RoomType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,17 +40,37 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7353441F-2EF3-44A6-9CE5-0D47E601EE0B/68/e8b61790/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/875C7F37-F4D4-4C4F-8257-D9B99AC8536C/31/InlineKeyboardButton.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/HotelBookingBot/Bot.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/ServiceCollectionExtensions.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/City.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Client.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Models/RoomType.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Hotel.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.json" />
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/ServiceCollectionExtensions.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Startup.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rCsi28wCSBlKnhY2nROZZipb3C" />
@@ -67,6 +93,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.HotelBookingBot">
@@ -109,14 +136,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618491534036</updated>
-      <workItem from="1618491549169" duration="2763000" />
+      <workItem from="1618491549169" duration="3564000" />
+      <workItem from="1618509197883" duration="16377000" />
+      <workItem from="1618603691542" duration="2003000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -128,6 +157,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
