@@ -42,7 +42,7 @@ namespace HotelBookingBot.Controllers
 			foreach (var command in commands.Where(command => command.Contains(update, _botClient.CurrentStates[chatId])))
 			{
 				await command.Execute(update);
-
+				_botClient.CurrentStates.TryAdd(chatId, command);
 				break;
 			}
 
