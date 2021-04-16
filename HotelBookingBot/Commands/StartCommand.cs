@@ -19,7 +19,7 @@ namespace HotelBookingBot.Commands
 		
 		public override bool Contains(Update update, Command state)
 		{
-			return update.Message.Text.Contains(Name) || update.InlineQuery.Query== "/back";
+			return !string.IsNullOrWhiteSpace(update.Message?.Text) && update.Message.Text.Contains(Name) || update.InlineQuery.Query== "/back";
 		}
 
 		public override async Task Execute(Update update)
