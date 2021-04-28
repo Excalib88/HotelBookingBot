@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/EnumExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelBooking.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking.db" beforeDir="false" afterPath="$PROJECT_DIR$/booking.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/booking.db-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/booking.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/booking.db-wal" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +46,13 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelBooking.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/EnumExtensions.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rCsi28wCSBlKnhY2nROZZipb3C" />
@@ -148,7 +125,7 @@
       <workItem from="1618603691542" duration="10022000" />
       <workItem from="1618694364399" duration="2484000" />
       <workItem from="1618767911408" duration="7863000" />
-      <workItem from="1619620522758" duration="6385000" />
+      <workItem from="1619620522758" duration="6851000" />
     </task>
     <servers />
   </component>

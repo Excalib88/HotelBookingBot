@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 using Telegram.Bot.Types;
@@ -53,7 +54,7 @@ namespace HotelBookingBot.Commands
 			});
 			var booking = botClient.Bookings[update.CallbackQuery.From.Id];
 			await using var context = new DataContext(botClient.Configuration.GetConnectionString("Db"));
-			var hotel = context.Hotels
+			var hotel = context.Hotels.Include(i => i.City).Include(i => i.HotelRooms)
 				.FirstOrDefault(x => x.City.Name == booking.CityName && x.Stars == booking.HotelStarsType && 
 				                     x.HotelRooms.Exists(hotelRoom => 
 					                     hotelRoom.Price >= booking.PriceFilter.Item1 && 

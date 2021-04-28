@@ -23,7 +23,7 @@ namespace HotelBookingBot.Commands
 			var hotel = $"Город: {booking.CityName}\n" +
 			            $"Количество дней: {booking.Days} д.\n" +
 			            $"Тип номера: {booking.RoomType.ToEnumString()} \n" +
-			            $"Ценовой диапозон: от {booking.PriceFilter.Item1} до {booking.PriceFilter.Item2}" +
+			            $"Ценовой диапозон: от {booking.PriceFilter.Item1} до {booking.PriceFilter.Item2} \n" +
 			            $"Количество звезд: {booking.HotelStarsType.ToStarsString()}";
 			var keyboard = new InlineKeyboardMarkup(new[]
 			{
