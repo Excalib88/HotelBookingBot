@@ -2,7 +2,7 @@
 {
 	public enum HotelStarsType
 	{
-		One,
+		One = 1,
 		Two,
 		Three,
 		Four,

@@ -22,6 +22,9 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update, BotClient botClient)
 		{
+			var chatId = update.CallbackQuery.From.Id;
+			botClient.Bookings[chatId].RoomType = update.CallbackQuery.Data.ToRoom();
+
 			var keyboard = new InlineKeyboardMarkup(new[]
 			{
 				new[]
@@ -75,7 +78,7 @@ namespace HotelBookingBot.Commands
 					new InlineKeyboardButton
 					{
 						Text = "Все",
-						CallbackData = "Все-000"
+						CallbackData = "0-1000000"
 					}
 				},
 				new[]

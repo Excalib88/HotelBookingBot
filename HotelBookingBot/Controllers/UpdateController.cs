@@ -2,7 +2,9 @@
 using System.Threading.Tasks;
 using HotelBookingBot.Commands;
 using HotelBookingBot.Entities;
+using HotelBookingBot.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
@@ -13,11 +15,13 @@ namespace HotelBookingBot.Controllers
 	{
 		private readonly BotClient _botClient;
 		private readonly ITelegramBotClient _telegramBotClient;
+		private readonly IConfiguration _configuration;
 
-		public MessageController(BotClient botClient, ITelegramBotClient telegramBotClient)
+		public MessageController(BotClient botClient, ITelegramBotClient telegramBotClient, IConfiguration configuration)
 		{
 			_botClient = botClient;
 			_telegramBotClient = telegramBotClient;
+			_configuration = configuration;
 		}
 
 		[HttpGet("health")]
@@ -41,7 +45,13 @@ namespace HotelBookingBot.Controllers
 
 			if (!_botClient.Bookings.TryGetValue(chatId, out _))
 			{
-				_botClient.Bookings.TryAdd(chatId, new Booking());
+				var hotels = new HotelBooking();
+				// await using (var context = new DataContext(_configuration.GetConnectionString("Db")))
+				// {
+				// 	
+				// }
+
+				_botClient.Bookings.TryAdd(chatId, hotels);
 			}
 
 			foreach (var command in commands.Where(command => command.Contains(update, _botClient.CurrentStates[chatId])))
@@ -51,6 +61,18 @@ namespace HotelBookingBot.Controllers
 				break;
 			}
 
+			return Ok();
+		}
+
+		[HttpPost("hotel")]
+		public async Task<IActionResult> AddHotels(Hotel hotel)
+		{
+			using var context = new DataContext(_configuration.GetConnectionString("Db"));
+			{
+				await context.Hotels.AddAsync(hotel);
+				await context.SaveChangesAsync();
+			}
+				
 			return Ok();
 		}
 	}

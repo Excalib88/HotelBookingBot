@@ -7,15 +7,15 @@ namespace HotelBookingBot
 	{
 		private readonly string _connectionString;
 
-		public DataContext(DbContextOptions options) : base(options)
-		{
-		}
+		// public DataContext(DbContextOptions options) : base(options)
+		// {
+		// }
 
-		public DataContext(string connectionString)
+		public DataContext(string connectionString = @"Data Source=D:/Projects/HotelBookingBot/booking.db")
 		{
 			_connectionString = connectionString;
 		}
-
+		
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			optionsBuilder.UseSqlite(_connectionString);

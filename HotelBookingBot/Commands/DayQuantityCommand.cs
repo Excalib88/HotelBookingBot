@@ -21,7 +21,10 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update, BotClient botClient)
 		{
-			await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, "Введите количество дней!");
+			var chatId = update.CallbackQuery.From.Id;
+			botClient.Bookings[chatId].CityName = update.CallbackQuery.Data;
+			
+			await _telegramBotClient.SendTextMessageAsync(chatId, "Введите количество дней!");
 		}
 
 		public override bool Contains(Update update, Command state)

@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Linq;
+using System.Threading.Tasks;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.ReplyMarkups;
@@ -17,6 +18,10 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update, BotClient botClient)
 		{
+			var chatId = update.Message.Chat.Id;
+			var filter = update.CallbackQuery.Data.PriceExpression();
+			botClient.Bookings[chatId].PriceFilter = filter;
+
 			var keyboard = new InlineKeyboardMarkup(new[]
 			{
 				new[]

@@ -17,6 +17,14 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update, BotClient botClient)
 		{
+			var chatId = update.CallbackQuery.From.Id;
+			var booking = botClient.Bookings[chatId];
+			booking.HotelStarsType = update.CallbackQuery.Data.ToStars();
+			var hotel = $"Город: {booking.CityName}\n" +
+			            $"Количество дней: {booking.Days} д.\n" +
+			            $"Тип номера: {booking.RoomType.ToEnumString()} \n" +
+			            $"Ценовой диапозон: от {booking.PriceFilter.Item1} до {booking.PriceFilter.Item2}" +
+			            $"Количество звезд: {booking.HotelStarsType.ToStarsString()}";
 			var keyboard = new InlineKeyboardMarkup(new[]
 			{
 				new[]
@@ -33,8 +41,7 @@ namespace HotelBookingBot.Commands
 					}
 				}
 			});
-
-			await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, "Подтверждаете правильность введённых данных?", replyMarkup: keyboard);
+			await _telegramBotClient.SendTextMessageAsync(chatId, $"Подтверждаете правильность введённых данных? \n{hotel}", replyMarkup: keyboard);
 		}
 
 		public override bool Contains(Update update, Command state)

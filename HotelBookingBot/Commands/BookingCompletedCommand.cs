@@ -18,11 +18,11 @@ namespace HotelBookingBot.Commands
 		public override async Task Execute(Update update, BotClient botClient)
 		{
 			var chatId = update.CallbackQuery.From.Id;
-			await using (var context = new DataContext(botClient.Configuration.GetConnectionString("Db")))
-			{
-				await context.Bookings.AddAsync(botClient.Bookings[chatId]);
-				await context.SaveChangesAsync();
-			}
+			// await using (var context = new DataContext(botClient.Configuration.GetConnectionString("Db")))
+			// {
+			// 	await context.Bookings.AddAsync(botClient.Bookings[chatId]);
+			// 	await context.SaveChangesAsync();
+			// }
 
 			await _telegramBotClient.SendTextMessageAsync(chatId, "Бронирование завершено!");
 		}

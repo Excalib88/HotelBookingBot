@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using HotelBookingBot.Commands;
 using HotelBookingBot.Entities;
+using HotelBookingBot.Models;
 using Microsoft.Extensions.Configuration;
 using Telegram.Bot;
 
@@ -10,7 +11,7 @@ namespace HotelBookingBot
 	{
 		public List<Command> Commands { get; }
 		public Dictionary<long, Command> CurrentStates { get; set; } = new Dictionary<long, Command>();
-		public Dictionary<long, Booking> Bookings { get; set; } = new Dictionary<long, Booking>();
+		public Dictionary<long, HotelBooking> Bookings { get; set; } = new Dictionary<long, HotelBooking>();
 		public IConfiguration Configuration { get; set; }
 		
 		public BotClient(ITelegramBotClient telegramBotClient, IConfiguration configuration)

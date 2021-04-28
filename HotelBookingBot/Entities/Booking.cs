@@ -5,5 +5,6 @@
 		public long Id { get; set; }
 		public Hotel Hotel { get; set; }
 		public Client Client { get; set; }
+		public int Days { get; set; }
 	}
 }

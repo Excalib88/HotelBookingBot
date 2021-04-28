@@ -17,6 +17,10 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update, BotClient botClient)
 		{
+			var chatId = update.Message.Chat.Id;
+			int.TryParse(update.Message?.Text, out int result);
+			botClient.Bookings[chatId].Days = result;
+
 			var keyboard = new InlineKeyboardMarkup(new[]
 			{
 				new[]
@@ -65,12 +69,12 @@ namespace HotelBookingBot.Commands
 				}
 			});
 
-			await _telegramBotClient.SendTextMessageAsync(update.Message.Chat.Id, "Выберите тип номера", replyMarkup: keyboard);
+			await _telegramBotClient.SendTextMessageAsync(chatId, "Выберите тип номера", replyMarkup: keyboard);
 		}
 
 		public override bool Contains(Update update, Command state)
 		{
-			return int.TryParse(update.Message?.Text, out int result) && state.Name.Contains("DayQuantity");
+			return int.TryParse(update.Message?.Text, out _) && state.Name.Contains("DayQuantity");
 		}
 	}
 }

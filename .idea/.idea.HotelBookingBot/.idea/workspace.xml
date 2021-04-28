@@ -5,20 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/EnumExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelBooking.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/HotelBookingBot.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking.db" beforeDir="false" afterPath="$PROJECT_DIR$/booking.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/booking.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/booking.db-wal" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +39,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C870CA06-9021-47A9-A402-5993CEEFDC2D/E8/ValueTuple.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7353441F-2EF3-44A6-9CE5-0D47E601EE0B/68/e8b61790/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/C870CA06-9021-47A9-A402-5993CEEFDC2D/20/Enum.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7353441F-2EF3-44A6-9CE5-0D47E601EE0B/9e/f85c3bf2/DbContextOptionsBuilder.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/875C7F37-F4D4-4C4F-8257-D9B99AC8536C/31/InlineKeyboardButton.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -38,29 +50,32 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/Bot.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/ServiceCollectionExtensions.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Entities/City.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Client.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Models/RoomType.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Hotel.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.json" />
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Startup.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Models/BookingModel.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/Command.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelModel.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/HotelRoom.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Startup.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Booking.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/RoomTypeCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelBooking.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/PriceFilterCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/DayQuantityCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/ChooseCityCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/BotClient.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/DataContext.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCompletedCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Models/HotelStarsType.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/EnumExtensions.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rCsi28wCSBlKnhY2nROZZipb3C" />
@@ -130,7 +145,10 @@
       <updated>1618491534036</updated>
       <workItem from="1618491549169" duration="3564000" />
       <workItem from="1618509197883" duration="16377000" />
-      <workItem from="1618603691542" duration="8286000" />
+      <workItem from="1618603691542" duration="10022000" />
+      <workItem from="1618694364399" duration="2484000" />
+      <workItem from="1618767911408" duration="7863000" />
+      <workItem from="1619620522758" duration="6385000" />
     </task>
     <servers />
   </component>
@@ -153,24 +171,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/HotelBookingBot/Controllers/UpdateController.cs</url>
-          <line>48</line>
-          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Controllers\UpdateController.cs" initialLine="43" containingFunctionPresentation="method 'Post'">
-            <startOffsets>
-              <option value="1353" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1395" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
