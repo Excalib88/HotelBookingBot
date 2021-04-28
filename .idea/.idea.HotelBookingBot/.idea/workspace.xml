@@ -4,7 +4,10 @@
     <projectFile>HotelBookingBot/HotelBookingBot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="" />
+    <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +31,6 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Client.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Models/RoomType.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Entities/Hotel.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.json" />
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.Development.json" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Models/BookingModel.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/StartCommand.cs" />
@@ -51,6 +53,7 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.json" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rCsi28wCSBlKnhY2nROZZipb3C" />
@@ -123,7 +126,7 @@
       <workItem from="1618603691542" duration="10022000" />
       <workItem from="1618694364399" duration="2484000" />
       <workItem from="1618767911408" duration="7863000" />
-      <workItem from="1619620522758" duration="9211000" />
+      <workItem from="1619620522758" duration="10677000" />
     </task>
     <servers />
   </component>
@@ -155,13 +158,26 @@
           <line>58</line>
           <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Commands\BookingCommand.cs" initialLine="57" containingFunctionPresentation="method 'Execute'">
             <startOffsets>
-              <option value="1399" />
+              <option value="1398" />
             </startOffsets>
             <endOffsets>
-              <option value="1651" />
+              <option value="1650" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs</url>
+          <line>80</line>
+          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Commands\BookingCommand.cs" initialLine="80" containingFunctionPresentation="method 'Execute'">
+            <startOffsets>
+              <option value="1966" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1984" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

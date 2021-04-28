@@ -64,8 +64,8 @@ namespace HotelBookingBot.Commands
 				.Select(x=>x.HotelId)
 				.ToList();
 			
-			var hotels = context.Hotels.Include(i => i.City)
-				.Where(x => x.City.Name == booking.CityName && x.Stars == booking.HotelStarsType).ToList();
+			var hotelCollection = context.Hotels.Include(i => i.City).ToList();
+			var hotels = hotelCollection.Where(x => x.City.Name == booking.CityName && x.Stars == booking.HotelStarsType).ToList();
 
 			Hotel hotel = null;
 
