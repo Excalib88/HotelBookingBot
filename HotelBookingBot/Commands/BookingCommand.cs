@@ -85,7 +85,7 @@ namespace HotelBookingBot.Commands
 			else
 			{
 				var hotelString = $"Отель: {hotel.Name}\n" +
-				                  $"Адрес: {hotel.City} {hotel.Address}";
+				                  $"Адрес: {hotel.City.Name} {hotel.Address}";
 				await _telegramBotClient.SendTextMessageAsync(update.CallbackQuery.From.Id, $"Подтверждаете бронирование отеля?\n{hotelString}", replyMarkup: keyboardSuccess);
 			}
 		}
