@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0789b0d3-af01-4789-b435-d503e15213bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HotelBookingBot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/HotelBookingBot/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +51,8 @@
       <option value="$PROJECT_DIR$/HotelBookingBot/EnumExtensions.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/HotelStarsCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/Commands/TotalFinderCommand.cs" />
-      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
       <option value="$PROJECT_DIR$/HotelBookingBot/appsettings.json" />
+      <option value="$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rCsi28wCSBlKnhY2nROZZipb3C" />
@@ -126,7 +125,7 @@
       <workItem from="1618603691542" duration="10022000" />
       <workItem from="1618694364399" duration="2484000" />
       <workItem from="1618767911408" duration="7863000" />
-      <workItem from="1619620522758" duration="10677000" />
+      <workItem from="1619620522758" duration="11821000" />
     </task>
     <servers />
   </component>
@@ -171,10 +170,10 @@
           <line>80</line>
           <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Commands\BookingCommand.cs" initialLine="80" containingFunctionPresentation="method 'Execute'">
             <startOffsets>
-              <option value="1966" />
+              <option value="2012" />
             </startOffsets>
             <endOffsets>
-              <option value="1984" />
+              <option value="2030" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
