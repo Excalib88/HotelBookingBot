@@ -55,8 +55,8 @@ namespace HotelBookingBot.Commands
 			});
 			var booking = botClient.Bookings[update.CallbackQuery.From.Id];
 			await using var context = new DataContext(botClient.Configuration.GetConnectionString("Db"));
-			var hotelrooms = context.HotelRooms.ToList();
-			var hotelRooms = context.HotelRooms
+			var hotelRooms = context.HotelRooms.ToList();
+			var hotelRoomsFiltered = hotelRooms
 				.Where(hotelRoom =>
 					hotelRoom.Price >= booking.PriceFilter.Item1 &&
 					hotelRoom.Price <= booking.PriceFilter.Item2 && 
@@ -71,7 +71,7 @@ namespace HotelBookingBot.Commands
 
 			foreach (var item in hotels)
 			{
-				if (hotelRooms.Contains(item.Id))
+				if (hotelRoomsFiltered.Contains(item.Id))
 				{
 					hotel = item;
 					break;
