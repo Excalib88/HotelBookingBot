@@ -18,7 +18,7 @@ namespace HotelBookingBot.Commands
 
 		public override async Task Execute(Update update, BotClient botClient)
 		{
-			var chatId = update.Message.Chat.Id;
+			var chatId = update.CallbackQuery.From.Id;
 			var filter = update.CallbackQuery.Data.PriceExpression();
 			botClient.Bookings[chatId].PriceFilter = filter;
 
