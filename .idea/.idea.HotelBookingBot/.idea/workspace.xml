@@ -126,7 +126,7 @@
       <workItem from="1618603691542" duration="10022000" />
       <workItem from="1618694364399" duration="2484000" />
       <workItem from="1618767911408" duration="7863000" />
-      <workItem from="1619620522758" duration="7897000" />
+      <workItem from="1619620522758" duration="8544000" />
     </task>
     <servers />
   </component>
@@ -149,5 +149,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/HotelBookingBot/Commands/BookingCommand.cs</url>
+          <line>57</line>
+          <properties documentPath="D:\Projects\HotelBookingBot\HotelBookingBot\Commands\BookingCommand.cs" initialLine="57" containingFunctionPresentation="method 'Execute'">
+            <startOffsets>
+              <option value="1350" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1606" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
