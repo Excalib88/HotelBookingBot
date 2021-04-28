@@ -57,7 +57,8 @@ namespace HotelBookingBot.Commands
 			await using var context = new DataContext(botClient.Configuration.GetConnectionString("Db"));
 			var hotelRooms = context.HotelRooms.Where(hotelRoom =>
 				hotelRoom.Price >= booking.PriceFilter.Item1 &&
-				hotelRoom.Price <= booking.PriceFilter.Item2 && hotelRoom.RoomType == booking.RoomType).Select(x=>x.HotelId).ToList();
+				hotelRoom.Price <= booking.PriceFilter.Item2 && 
+				hotelRoom.RoomType == booking.RoomType).ToList().Select(x=>x.HotelId).ToList();
 			
 			var hotels = context.Hotels.Include(i => i.City)
 				.Where(x => x.City.Name == booking.CityName && x.Stars == booking.HotelStarsType).ToList();
